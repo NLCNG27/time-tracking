@@ -7,30 +7,30 @@ export default function TimerForm({ id, title, project }) {
   const submitText = id ? 'Update' : 'Create';
 
   return (
-    <View style={StyleSheet.formContainer}>
-      <View style={StyleSheet.attributeContainer}>
-        <Text style={StyleSheet.textInputTitle}>Title</Text>
-        <View style={StyleSheet.textInputContainer}>
+    <View style={styles.formContainer}>
+      <View style={styles.attributeContainer}>
+        <Text style={styles.textInputTitle}>Title</Text>
+        <View style={styles.textInputContainer}>
           <TextInput
-            style={StyleSheet.textInput}
+            style={styles.textInput}
             underlineColorAndroid="transparent"
             defaultValue={title}
           />
         </View>
       </View>
 
-      <View style={StyleSheet.attributeContainer}>
-        <Text style={StyleSheet.textInputTitle}>Project</Text>
-        <View style={StyleSheet.textInputContainer}>
+      <View style={styles.attributeContainer}>
+        <Text style={styles.textInputTitle}>Project</Text>
+        <View style={styles.textInputContainer}>
           <TextInput 
-            style={StyleSheet.textInput}
+            style={styles.textInput}
             underlineColorAndroid="transparent"
             defaultValue={project}
           />
         </View>
       </View>
 
-      <View style={StyleSheet.buttonGroup}>
+      <View style={styles.buttonGroup}>
         <TimerButton small color="#21BA45" title={submitText} />
         <TimerButton small color="#DB2828" title="Cancel" />
         

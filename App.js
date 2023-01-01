@@ -9,6 +9,7 @@ import ToggleableTimerForm from './components/ToggleableTimerForm';
 
 
 export default class App extends React.Component {
+  
   render() {
     return (
       <View style={styles.appContainer}>
@@ -32,7 +33,6 @@ export default class App extends React.Component {
             elapsed = "3890985"
             editFormOpen
           />
-
         </ScrollView>
       </View>
     );
@@ -42,7 +42,6 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   appContainer: {
     flex: 1,
-    
   },
   titleContainer: {
     paddingTop: 35,
